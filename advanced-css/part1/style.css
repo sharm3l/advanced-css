@@ -1,0 +1,64 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.testimonial {
+  font-family: "Montserrat";
+  background-color: #c3cfe2;
+  padding: 24px;
+}
+
+.testimonial main {
+  background-color: white;
+  border: solid white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 24px 24px 102px;
+  color: grey;
+  font-size: 24px;
+  line-height: 160%;
+}
+
+.testimonial main p {
+  margin: 0;
+  padding: 0 0 24px;
+}
+
+.testimonial footer {
+  background-color: #686de0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: solid #686de0;
+  text-align: center;
+  color: white;
+  position: relative;
+  min-height: 104px;
+  padding-top: 100px;
+}
+
+.testimonial footer h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+.testimonial footer p {
+  font-size: 16px;
+  color: #c3cfe2;
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+.testimonial footer .suvi {
+  border-radius: 100px;
+  border: solid 7px white;
+  position: absolute;
+  left: 50%;
+  top: -75px;
+  width: 150px;
+  margin-left: -80px;
+}
+/*# sourceMappingURL=style.css.map */

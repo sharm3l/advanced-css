@@ -1,0 +1,59 @@
+@import "./mixins.scss";
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(7, 1fr);
+  padding-bottom: 16px;
+}
+
+.item {
+  position: relative;
+  padding: 16px 16px 0;
+
+  button {
+    position: absolute;
+    top: 175px;
+    left: 40%;
+    display: none;
+    font-size: 16px;
+    padding: 15px;
+    background-color: aqua;
+    border-radius: 5px;
+  }
+
+  &:hover button {
+    display: block;
+  }
+
+  .suvi {
+    width: 100%;
+    border-radius: 12px;
+    box-sizing: border-box;
+
+    &:hover {
+      transition: 2s;
+      opacity: 0;
+    }
+  }
+}
+
+@include for-size(tablet-up) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .item {
+    padding: 24px 24px 0;
+  }
+}
+
+@include for-size(desktop-up) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: 333px 333px 333px;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+  }
+}

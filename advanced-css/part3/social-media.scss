@@ -1,0 +1,77 @@
+.social-media-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+
+  a {
+    color: white;
+  }
+
+  .fa {
+    padding: 18px;
+    width: 18px;
+    text-align: center;
+    color: white;
+  }
+
+  .facebook {
+    background: #3b5998;
+  }
+  .twitter {
+    background: #00aced;
+  }
+  .blog {
+    background: #e17b77;
+  }
+  .github {
+    background: #333;
+  }
+  .linkedin {
+    background: #007bb6;
+  }
+
+  .icon {
+    float: left;
+    width: 54px;
+    height: 52px;
+  }
+
+  .text {
+    float: right;
+    position: relative;
+    top: 15px;
+    right: 10px;
+    color: white;
+    text-decoration: underline;
+    padding-left: 12px;
+  }
+
+  .button {
+    width: $icon-size;
+    height: $icon-size + 4;
+    overflow: scroll;
+
+    &:hover {
+      width: auto;
+      text-align: left;
+      display: inline-block;
+      transition: 0.5s;
+    }
+
+    @media screen and (max-width: 300px) {
+      &:hover {
+        width: $icon-size;
+      }
+      .text {
+        display: none;
+      }
+    }
+  }
+}
